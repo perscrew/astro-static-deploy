@@ -1,0 +1,31 @@
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.instructions {
+  margin-bottom: 2rem;
+  border: 1px solid rgba(var(--accent-light), 25%);
+  background: linear-gradient(
+    rgba(var(--accent-dark), 66%),
+    rgba(var(--accent-dark), 33%)
+  );
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,31 @@
+---
+const version = "1.0";
+---
+
+<footer>
+  <div>
+    <p>
+      Version {version}
+    </p>
+  </div>
+</footer>
+
+<style>
+  footer {
+    position: fixed;
+    color: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  div {
+    max-width: calc(100% - 2rem);
+    width: 800px;
+    margin: auto;
+  }
+
+  p {
+    text-align: right;
+  }
+</style>

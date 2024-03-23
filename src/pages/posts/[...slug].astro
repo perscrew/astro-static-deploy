@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { posts } from "../../config/posts";
+
+export function getStaticPaths() {
+  return posts.map(({ slug }) => ({ params: { slug } }));
+}
+
+const { slug } = Astro.params;
+const post = posts.find((post) => post.slug === slug);
+---
+
+<Layout title={`Post ${post?.title}`}>
+  <h1>{post?.title}</h1>
+  <p>Page de post</p>
+</Layout>
